@@ -22,8 +22,11 @@ const Header = () => {
             <ul className='hidden md:flex gap-4 items-center'>
                <Link href='/'><li className='hover:text-primary cursor-pointer hover:scale-105'>Visit</li></Link>
                <Link href='/'><li className='hover:text-primary cursor-pointer hover:scale-105'>Contact</li></Link>
-               <DropdownMenu>
-                  <DropdownMenuTrigger className='hover:text-primary hover:scale-105' asChild>menu</DropdownMenuTrigger>
+            </ul>
+            <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <h2 className='hover:text-primary cursor-pointer'>menu</h2>
+                    </DropdownMenuTrigger>
                   <DropdownMenuContent>
                     <DropdownMenuLabel>My Account</DropdownMenuLabel>
                     <DropdownMenuSeparator />
@@ -33,7 +36,7 @@ const Header = () => {
                     <DropdownMenuItem>Subscription</DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
-            </ul>
+
             <div className='flex gap-1 border rounded-full items-center px-3'>
                 <SearchIcon />
                <input type="text" name='search' placeholder='search here' className='outline-none p-2'/>
