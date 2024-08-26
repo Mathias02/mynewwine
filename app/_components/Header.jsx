@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { Button } from "@/components/ui/button"
 import { SearchIcon } from 'lucide-react'
+import Link from 'next/link'
 
 
 const Header = () => {
@@ -10,9 +11,9 @@ const Header = () => {
         <div className='flex gap-6 items-center justify-between'>
             <Image src="/winelogo.jpg" alt='logo' width={150} height={150} />
             <ul className='hidden md:flex gap-4 items-center'>
-                <li className='hover:red cursor-pointer'>Visit</li>
-                <li className='hover:red cursor-pointer'>Contact</li>
-                <li className='hover:red cursor-pointer'>menu</li>
+               <Link href='/'><li className='hover:red cursor-pointer'>Visit</li></Link>
+               <Link href='/'><li className='hover:red cursor-pointer'>Contact</li></Link>
+               <Link href='/'><li className='hover:red cursor-pointer'>menu</li></Link>
             </ul>
             <div className='flex gap-1 bg-slate-50 border rounded-full items-center px-3'>
                 <SearchIcon />
@@ -20,7 +21,7 @@ const Header = () => {
            </div>
         </div>
         <div>
-          <Button className='bg-primary' >Get started</Button>
+          <Button className='bg-primary'>Get started</Button>
         </div>
     </div>
   )
