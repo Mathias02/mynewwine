@@ -7,7 +7,7 @@ const Section = () => {
         <div>
             <Image src='/white.jpeg' width={450} height={200}  alt='section1'/>
             <div>
-                <h2 className='text-gray-400 p-5 font-bold tracking-wide text-xl'>White wine</h2>
+                <h2 className='text-gray-400 p-5 font-bold tracking-wide text-2xl'>White wine</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptatum corrupti nesciunt fugit perferendis, consectetur nostrum provident ratione voluptatem officiis iure rem ab, impedit facere. Fuga qui at saepe porro!
                 Quo commodi magni rem nihil temporibus officia recusandae, nesciunt numquam aliquam eveniet velit iusto ipsam harum esse voluptatibus iure unde quae sapiente eligendi modi aspernatur nostrum totam aliquid architecto. Rem!</p>
             </div>
@@ -15,7 +15,7 @@ const Section = () => {
         <div>
             <Image src='/sparkling.jpg' width={450} height={200}  alt='section1'/>
             <div>
-                <h2 className='text-gray-400 p-5 font-bold tracking-wide text-xl'>Sparkling wine</h2>
+                <h2 className='text-gray-400 p-5 font-bold tracking-wide text-2xl'>Sparkling wine</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptatum corrupti nesciunt fugit perferendis, consectetur nostrum provident ratione voluptatem officiis iure rem ab, impedit facere. Fuga qui at saepe porro!
                 Quo commodi magni rem nihil temporibus officia recusandae, nesciunt numquam aliquam eveniet velit iusto ipsam harum esse voluptatibus iure unde quae sapiente eligendi modi aspernatur nostrum totam aliquid architecto. Rem!</p>
             </div>
@@ -23,7 +23,7 @@ const Section = () => {
         <div>
             <Image src='/red.jpg' width={450} height={200}  alt='section1'/>
             <div>
-                <h2 className='text-gray-400 p-5 font-bold tracking-wide text-xl'>Red wine</h2>
+                <h2 className='text-gray-400 p-5 font-bold tracking-wide text-2xl'>Red wine</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptatum corrupti nesciunt fugit perferendis, consectetur nostrum provident ratione voluptatem officiis iure rem ab, impedit facere. Fuga qui at saepe porro!
                 Quo commodi magni rem nihil temporibus officia recusandae, nesciunt numquam aliquam eveniet velit iusto ipsam harum esse voluptatibus iure unde quae sapiente eligendi modi aspernatur nostrum totam aliquid architecto. Rem!</p>
             </div>
