@@ -34,7 +34,7 @@ const Header = () => {
                   </DropdownMenuContent>
                 </DropdownMenu>
             </ul>
-            <div className='flex gap-1 bg-slate-50 border rounded-full items-center px-3'>
+            <div className='flex gap-1 border rounded-full items-center px-3'>
                 <SearchIcon />
                <input type="text" name='search' placeholder='search here' className='outline-none p-2'/>
            </div>
