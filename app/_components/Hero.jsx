@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Hero = () => {
@@ -16,16 +17,16 @@ const Hero = () => {
           quidem quam repellat.
         </p>
 
-        <a
-          href="#"
+        <Link
+          href="/category"
           className="mt-8 inline-block rounded bg-primary px-12 py-3 text-sm font-medium text-white transition hover:bg-
            focus:outline-none focus:ring focus:ring-yellow-400"
         >
           Get Started Today
-        </a>
+        </Link>
       </div>
 
-      <Image src='/tasting.jpg' width={870} height={600} alt='heroimg' />
+      <Image src='/main.jpg' width={870} height={600} alt='heroimg' />
     </div>
   </div>
 </section>
