@@ -1,30 +1,20 @@
-"use client"
+
 
 import CategoryList from '@/app/_components/CategoryList';
 import GlobalApi from '@/app/_utils/GlobalApi'
-import React, { useEffect, useState } from 'react'
 
-const dataPage = () => {
 
- const [lists, setLists] = useState([]);
+export default async function dataPage () {
 
-  useEffect(()=>{
-    fetchData()
-  },[]);
-
-  const fetchData = () => {
-      GlobalApi.getCategories().then(resp =>{
-        console.log(resp.data.data);
-        setLists(resp.data.data)
-      })
-  }
-
+    const fetchedData = await GlobalApi.getCategories();
+        console.log(fetchedData);
+      
   return (
 
     <div>
-      <CategoryList lists={lists} />
+      <CategoryList lists={fetchedData} />
     </div>
   )
 }
 
-export default dataPage
+
