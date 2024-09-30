@@ -1,10 +1,10 @@
 
 import React from 'react'
 import Catalog from './Catalog'
+import Barrel from './Barrel';
 
 const CategoryList = ({lists}) => {
 
-  console.log(lists);
 
   return (
     <div>
@@ -18,6 +18,7 @@ const CategoryList = ({lists}) => {
             )
         })}
       </div>
+      <Barrel />
     </div>
   )
 }

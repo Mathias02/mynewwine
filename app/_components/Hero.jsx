@@ -9,13 +9,13 @@ const Hero = () => {
     <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
 
       <div className="lg:py-24">
-        <h2 className="text-3xl font-bold sm:text-4xl">You are <span className='text-primary'> welcome to taste</span> our wine</h2>
+        <h2 className="text-3xl font-bold sm:text-4xl">You are <span className='text-primary'> welcome to taste</span> my wine</h2>
 
         <p className="mt-4 text-gray-600">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic atque tenetur quis
-          eius quos ea neque sunt, accusantium soluta minus veniam tempora deserunt? Molestiae eius
-          quidem quam repellat.
-        </p>
+        Traveling to wine regions is one way of increasing skill in tasting. Many wine producers in wine regions all over
+         the world offer tastings of their wine. Depending on the country 
+         or region, tasting at the winery may incur a small charge to allow
+          the producer to cover costs.</p>
 
         <Link
           href="/category"
@@ -26,7 +26,7 @@ const Hero = () => {
         </Link>
       </div>
 
-      <Image src='/main.jpg' width={870} height={600} alt='heroimg' />
+      <Image src='/main.jpg' width={650} height={400} alt='heroimg' className='w-full'/>
     </div>
   </div>
 </section>
