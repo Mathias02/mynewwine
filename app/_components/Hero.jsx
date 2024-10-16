@@ -18,7 +18,7 @@ const Hero = () => {
           the producer to cover costs.</p>
 
         <Link
-          href="/category"
+          href="/categories"
           className="mt-8 inline-block rounded bg-primary px-12 py-3 text-sm font-medium text-white transition hover:bg-
            focus:outline-none focus:ring focus:ring-yellow-400"
         >
