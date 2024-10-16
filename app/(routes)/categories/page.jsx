@@ -9,13 +9,15 @@ const CategoryPage = () => {
 
     const [data,setData]= useState([]);
 
-    const data1 = async () => {
-     const dataBox= await GlobalApi.getCategories().then((resp) =>{
-       console.log(resp);
-       setData(dataBox);
-
+    const dataFetched = () => {
+       GlobalApi.getCategories().then((resp) =>{
+       setData(resp.data.data)
      });
     }
+
+    useEffect(() => {
+        dataFetched();
+    },[])
    
   return (
     <div>

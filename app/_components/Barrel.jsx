@@ -3,7 +3,7 @@ import React from 'react'
 
 const Barrel = () => {
   return (
-    <div className='grid md:grid-cols-2 gap-3'>
+    <div className='grid md:grid-cols-2 gap-3 mt-8'>
       <div className='p-1'>
           <Image src="/Delaire-Graff.jpg" alt='glass' width={450} height={300} className='h-auto w-full object-cover' />
       </div>
