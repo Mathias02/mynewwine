@@ -20,8 +20,8 @@ const Header = () => {
         <div className='flex gap-6 items-center justify-between'>
             <Image src="/winelogo.jpg" alt='logo' width={150} height={150} />
             <ul className='hidden md:flex gap-4 items-center'>
-               <Link href='/'><li className='hover:text-primary cursor-pointer hover:scale-105'>Visit</li></Link>
-               <Link href='/'><li className='hover:text-primary cursor-pointer hover:scale-105'>Contact</li></Link>
+               <Link href='/visit'><li className='hover:text-primary cursor-pointer hover:scale-105'>Visit</li></Link>
+               <Link href='/contact'><li className='hover:text-primary cursor-pointer hover:scale-105'>Contact</li></Link>
             </ul>
             <DropdownMenu>
                   <DropdownMenuTrigger asChild>

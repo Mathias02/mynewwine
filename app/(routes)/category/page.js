@@ -7,7 +7,6 @@ import GlobalApi from '@/app/_utils/GlobalApi'
 export default async function dataPage () {
 
     const fetchedData = await GlobalApi.getCategories();
-        console.log(fetchedData);
       
   return (
 
