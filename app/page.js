@@ -1,8 +1,13 @@
-import Image from "next/image";
+
 import Hero from "./_components/Hero";
 import Section from "./_components/Section";
+import GlobalApi from "./_utils/GlobalApi";
+import CategoryList from "./_components/CategoryList";
 
-export default function Home() {
+export default async function Home() {
+
+  const fetchedData = await GlobalApi.getCategories();
+  
   return (
     <div>
       {/*hero section */}
@@ -10,6 +15,11 @@ export default function Home() {
 
        {/*section area*/}
        <Section />
+
+       {/* categories */}
+
+      <CategoryList lists={fetchedData}  />
+
     </div>
   );
 }
