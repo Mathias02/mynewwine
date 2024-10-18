@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <div className='flex items-center justify-between pr-10 shadow-md'>
         <div className='flex gap-6 items-center justify-between'>
-            <Image src="/winelogo.jpg" alt='logo' width={150} height={150} />
+            <Link href={'/'}><Image src="/winelogo.jpg" alt='logo' width={150} height={150} /></Link>
             <ul className='hidden md:flex gap-4 items-center'>
                <Link href='/visit'><li className='hover:text-primary cursor-pointer hover:scale-105'>Visit</li></Link>
                <Link href='/contact'><li className='hover:text-primary cursor-pointer hover:scale-105'>Contact</li></Link>

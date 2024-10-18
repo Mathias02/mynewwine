@@ -22,7 +22,7 @@ const layout = ({children}) => {
            <Details data={detail}/>
         </div>
 
-        <div className='col-span-3 border-[3px]'>
+        <div className='col-span-3'>
             {children}
         </div>
     </div>
