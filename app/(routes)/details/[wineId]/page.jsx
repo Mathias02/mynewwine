@@ -23,9 +23,10 @@ const page = ({params}) => {
     <div>
        {prod.map((item, index) => {
             return(
-                <div key={index} className='p-2'>
+                <div key={index} className='px-5 py-7 grid grid-cols-2 gap-3'>
+                    <Image src={item.attributes?.media?.data[0]?.attributes?.url} width={250} height={250} alt='img' className='w-full object-contain w-[250] h-[250]'/> 
                     <h2>{item.attributes?.Name}</h2>
-                    {/* <Image src={item.attributes.} width={200} height={200} alt='img' /> */}
+                    
                 </div>
             )
        })}
