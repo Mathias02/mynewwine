@@ -20,12 +20,15 @@ const page = ({params}) => {
     }
 
   return (
-    <div>
+    <div className='grid md:grid-cols-3 mt-9 gap-3 justify-center items-center px-2'>
        {prod.map((item, index) => {
             return(
-                <div key={index} className='px-5 py-7 grid grid-cols-2 gap-3'>
-                    <Image src={item.attributes?.media?.data[0]?.attributes?.url} width={250} height={250} alt='img' className='w-full object-contain w-[250] h-[250]'/> 
-                    <h2>{item.attributes?.Name}</h2>
+                <div key={index} className='border p-3 rounded-lg hover:border-gray-700 cursor-pointer'>
+                    <Image src={item.attributes?.icons?.data[0]?.attributes?.url} width={350} height={350} alt='img' className='object-cover h-48 transition-all rounded-lg'/> 
+                    <div className='px-5 py-2 flex flex-col'>
+                       <h2 className='font-bold text-xl text-gray-400 text-left'>{item.attributes?.Name}</h2>
+                    </div>
+                    
                     
                 </div>
             )
