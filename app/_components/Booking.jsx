@@ -4,8 +4,10 @@ import React, { useEffect, useState } from 'react'
 import { Button } from '@/components/ui/button'
 import {
     Dialog,
+    DialogClose,
     DialogContent,
     DialogDescription,
+    DialogFooter,
     DialogHeader,
     DialogTitle,
     DialogTrigger,
@@ -18,6 +20,8 @@ import { AlarmClockPlus, CalendarDays } from 'lucide-react'
 const BookingApp = () => {
     const [date, setDate] = useState(new Date());
     const [timeSlot,setTimeSlot] = useState();
+    const [selectedTime,setSelectedTime] = useState();
+
 
     useEffect(() =>{
         workingHours()
@@ -81,7 +85,8 @@ function isDayOld (day) {
                     <div className='grid grid-cols-3 gap-2 border py-5 px-2 rounded-lg'>
                         {timeSlot?.map((item, index) =>{
                            return(
-                              <h2 key={index} className='p-2 border rounded-full text-center cursor-pointer hover:bg-primary hover:text-white'>{item?.time}</h2>  
+                              <h2 key={index} onClick={() => setSelectedTime(item.time)} className={`p-2 border rounded-full text-center cursor-pointer
+                               hover:bg-primary hover:text-white ${item.time === selectedTime && "bg-primary text-white"}`}>{item?.time}</h2>  
                            ) 
                         })}
                     </div>
@@ -90,6 +95,18 @@ function isDayOld (day) {
         </div>
       </DialogDescription>
     </DialogHeader>
+    <DialogFooter className="sm:justify-end">
+          <DialogClose asChild>
+            <>
+                <Button type="button" variant="secondary" className='text-red-600 border-red-600 px-4'>
+                  Close
+                </Button> 
+                <Button type="button" disabled={!(date&&selectedTime)}>
+                  Submit
+                </Button> 
+            </>          
+          </DialogClose>
+        </DialogFooter>
   </DialogContent>
 </Dialog>
 
