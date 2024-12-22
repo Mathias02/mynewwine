@@ -46,6 +46,11 @@ const BookingApp = () => {
 
          setTimeSlot(workingTime)
     }
+
+function isDayOld (day) {
+  return day<new Date()
+}
+
   return (
     <Dialog>
   <DialogTrigger>
@@ -65,6 +70,7 @@ const BookingApp = () => {
                     mode="single"
                     selected={date}
                     onSelect={setDate}
+                    disabled={isDayOld}
                     className="rounded-md border"
                 />
                 </div>

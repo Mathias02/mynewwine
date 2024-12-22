@@ -26,7 +26,7 @@ const Hero = () => {
         </Link>
       </div>
 
-      <Image src='/main.jpg' width={650} height={400} alt='heroimg' className='w-full'/>
+      <Image src='https://wineninjas.org/wp-content/uploads/2019/03/red-wine-for-beginners.jpg?w=950' width={650} height={400} alt='heroimg' className='w-full'/>
     </div>
   </div>
 </section>

@@ -5,7 +5,7 @@ const Section = () => {
   return (
     <div className='grid grid-cols-3 gap-4 mb-8'>
         <div>
-            <Image src='/white.jpeg' width={450} height={200}  alt='section1' className='w-full'/>
+            <Image src='https://res.cloudinary.com/hz3gmuqw6/image/upload/c_fill,q_auto,w_750/f_auto/what-is-a-dry-white-wine-php6LebyJ' width={450} height={200}  alt='section1' className='w-full'/>
             <div>
                 <h2 className='text-gray-400 p-5 font-bold tracking-wide text-2xl'>White wine</h2>
                 <p><span className='font-bold text-lg'>White wine</span> is a wine that is fermented without skin contact. The colour can be straw-yellow, yellow-green, or yellow-gold.
@@ -14,7 +14,7 @@ const Section = () => {
             </div>
         </div>
         <div>
-            <Image src='/sparkling.jpg' width={450} height={200}  alt='section2' className='w-full'/>
+            <Image src='https://www.hoteljob.vn/uploads/images/19-06-12-13/sparkling-wine-la-gi-1.jpg' width={450} height={200}  alt='section2' className='w-full'/>
             <div>
                 <h2 className='text-gray-400 p-5 font-bold tracking-wide text-2xl'>Sparkling wine</h2>
                 <p><span className='font-bold text-lg'>Sparkling wine</span> is a wine with significant levels of carbon dioxide in it, making it fizzy. 
@@ -23,7 +23,7 @@ const Section = () => {
             </div>
         </div>
         <div>
-            <Image src='/red.jpg' width={450} height={200}  alt='section3' className='w-full'/>
+            <Image src='https://domf5oio6qrcr.cloudfront.net/medialibrary/9380/conversions/iStock-615737086-thumb.jpg' width={450} height={200}  alt='section3' className='w-full'/>
             <div>
                 <h2 className='text-gray-400 p-5 font-bold tracking-wide text-2xl'>Red wine</h2>
                 <p><span className='font-bold text-lg'>Red wine</span> is a type of wine made from dark-colored grape varieties. The color of the wine can range from intense violet, typical of young wines, through to brick red for mature 

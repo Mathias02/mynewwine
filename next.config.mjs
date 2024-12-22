@@ -8,6 +8,18 @@ const nextConfig = {
           protocol: "https",
           hostname: "res.cloudinary.com",
         },
+        {
+          protocol: "https",
+          hostname: "wineninjas.org",
+        },
+        {
+          protocol: "https",
+          hostname: "www.hoteljob.vn",
+        },
+        {
+          protocol: "https",
+          hostname: "domf5oio6qrcr.cloudfront.net",
+        },
       ],
     },
   };

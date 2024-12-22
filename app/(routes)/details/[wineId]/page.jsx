@@ -29,9 +29,9 @@ const page = ({params}) => {
                     <div key={index} className='border p-2 rounded-lg hover:border-gray-700'>
                         <Image src={item.attributes?.icons?.data[0]?.attributes?.url} width={350} height={350} alt='img' className='object-cover h-48 transition-all rounded-lg'/> 
                         <div className='px-5 py-2 flex flex-col'>
-                                <h2 className='font-bold text-xl mb-2 text-left'>{item.attributes?.Name}</h2>
-                                <h2 className='flex items-start'><FileText className='text-primary h-12 w-12 mr-3'/>{item.attributes?.Description}</h2>
-                                <h2 className='flex'><Anvil className='text-primary h-10 w-10 mr-3'/>{item.attributes?.Grape_variety}</h2>
+                            <h2 className='font-bold text-xl mb-2 text-left'>{item.attributes?.Name}</h2>
+                            <h2 className='flex items-start'><FileText className='text-primary h-12 w-12 mr-3'/>{item.attributes?.Description}</h2>
+                            <h2>{item.attributes?.Grape_variety}</h2>
                         </div>
                         <BookingApp />  
                     </div>
