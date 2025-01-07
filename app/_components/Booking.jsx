@@ -59,7 +59,7 @@ function isDayOld (day) {
   return (
     <Dialog>
   <DialogTrigger>
-        <Button className='rounded-full cursor-pointer'>Book appointment</Button> 
+        <Button className='rounded-full cursor-pointer'>Your Booking</Button> 
   </DialogTrigger>
   <DialogContent>
     <DialogHeader>
