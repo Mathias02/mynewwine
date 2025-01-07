@@ -14,6 +14,7 @@ import {
   } from "@/components/ui/dialog"
 import { Calendar } from "@/components/ui/calendar"
 import { AlarmClockPlus, CalendarDays } from 'lucide-react'
+import { Textarea } from '@/components/ui/textarea'
 
   
 
@@ -95,16 +96,17 @@ function isDayOld (day) {
         </div>
       </DialogDescription>
     </DialogHeader>
+    <Textarea />
     <DialogFooter className="sm:justify-end">
           <DialogClose asChild>
-            <>
-                <Button type="button" variant="secondary" className='text-red-600 border-red-600 px-4'>
+            <div>
+                 <Button type="button" variant="secondary" className='text-red-600 border-red-600 px-4'>
                   Close
                 </Button> 
                 <Button type="button" disabled={!(date&&selectedTime)}>
                   Submit
                 </Button> 
-            </>          
+            </div>            
           </DialogClose>
         </DialogFooter>
   </DialogContent>

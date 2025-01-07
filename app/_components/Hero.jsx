@@ -9,7 +9,7 @@ const Hero = () => {
     <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
 
       <div className="lg:py-24">
-        <h2 className="text-3xl font-bold sm:text-4xl">You are <span className='text-primary'> welcome to taste</span> my wine</h2>
+        <h2 className="text-3xl font-bold sm:text-4xl">You are welcome <span className='text-primary'>to taste my wine</span> via a booking</h2>
 
         <p className="mt-4 text-gray-600">
         Traveling to wine regions is one way of increasing skill in tasting. Many wine producers in wine regions all over
@@ -22,7 +22,7 @@ const Hero = () => {
           className="mt-8 inline-block rounded bg-primary px-12 py-3 text-sm font-medium text-white transition hover:bg-
            focus:outline-none focus:ring focus:ring-yellow-400"
         >
-          Get Started Today
+          Get Started y
         </Link>
       </div>
 
